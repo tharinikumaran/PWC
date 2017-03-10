@@ -146,7 +146,7 @@ option[default] {
 }
 .button + .button{
 	padding-top:0;
-	margin-left:32px;
+	margin-left:35px;
 }
 .button + .button + .button{
 	padding-top:10px;
