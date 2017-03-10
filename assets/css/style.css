@@ -1,0 +1,152 @@
+
+* { 
+	box-sizing: border-box; 
+}
+ body {
+ 	padding: 0;
+    margin: 0;    
+    font-family: Arial, sans-serif; 
+  	font-size:14px;
+}
+.container{
+	width: 100%;
+	max-width:960px;	
+	border:1px solid black;
+	margin: 0 auto;
+}
+header {
+	margin: 5px 20px;	 
+	background: #b5bdc8; 
+	background: -moz-linear-gradient(top,  #b5bdc8 0%, #e0e0e0 0%, #28343b 100%); 
+	background: -webkit-linear-gradient(top,  #b5bdc8 0%,#e0e0e0 0%,#28343b 100%); 
+	background: linear-gradient(to bottom,  #b5bdc8 0%,#e0e0e0 0%,#28343b 100%); 
+}
+h2{
+	padding:10px 10px 10px 20px;
+}
+section{
+	font-size:16px;
+	margin-bottom: 30px;
+}
+form{
+	margin:25px 20px;
+	padding-left: 20px;
+}
+
+label{
+	display:block;
+}
+input, select {
+	padding-left:10px;
+    width: 53%;
+    min-height:40px;
+	border: solid #808080 1px;	
+}
+input[type=text]:focus {  
+  border-color: #4697e4;
+}
+p, label{
+	font-weight: bold;
+}
+select{
+  color: grey;
+}
+option {
+  color: black;
+}
+option[default] {
+   display: none;
+}
+.button{	
+	height:40px;  
+	width:40%; 
+  padding-top:10px;
+  margin-bottom:25px;  
+  text-align:center;   
+  border-color:#6495ED;
+  background-color:#fa842f;
+  border-radius:25px;
+  font-size:14px;
+  cursor: pointer;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-top:5px;
+  margin-bottom: 15px;
+
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: #fff;border:1px solid #808080;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #fff;
+  border:1px solid #808080;
+}
+.control_indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control_checkbox .control_indicator:after {
+  left: 8px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid #808080;
+  border-width: 0 2px 2px 0;
+  transform: rotate(40deg);
+}
+.submit{
+	position: relative;
+	width:130px;
+	height:40px; 
+	padding-top:10px; 
+  text-align:center;     
+  font-size:14px;	
+	bottom:22px;  
+	color:white;
+	float:right;
+	border-radius:25px;
+	background-color: red;
+	cursor: pointer;
+}
+
+
+@media (min-width:769px){
+.button{
+	display: inline-block;	
+    width:14%; 
+    margin-bottom:0;  
+    vertical-align: bottom;
+    
+    font-size:17px;
+}
+.button + .button{
+	padding-top:0;
+	margin-left:30px;
+}
+.button + .button + .button{
+	padding-top:10px;
+}
+
+}
