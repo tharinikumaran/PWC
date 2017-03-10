@@ -122,7 +122,7 @@ option[default] {
 	height:40px; 
 	padding-top:10px; 
   text-align:center;     
-  font-size:16px;	
+  font-size:14px;	
 	bottom:22px;  
 	color:white;
 	float:right;
@@ -148,5 +148,7 @@ option[default] {
 .button + .button + .button{
 	padding-top:10px;
 }
-
+.submit{
+  font-size:18px;
+  }
 }
