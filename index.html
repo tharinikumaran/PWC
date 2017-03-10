@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>PWC-Test</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<<script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
 		<header>
 			<h2>My application form</h2>
 		</header>		
-		<form>
+		<form action="#">
 			<section>				
 				<label for="fullname">My name is:</label><br>
 				<div><input maxlength="75" type="text" id="fullname" name="fullname" placeholder="Please enter your full name" />					
@@ -20,9 +20,9 @@
 			</section>
 			<section >				
 				<p>I find CSS</p>
-				<div class="button" id="onClick">Easy</div>
-				<div class="button" id="onClick">Occasionally hard</div>
-				<div class="button" id="onClick">Diabolical</div>
+				<div class="button">Easy</div>
+				<div class="button">Occasionally hard</div>
+				<div class="button">Diabolical</div>
 			</section>
 			<section >				
 				<p>My favourite javascript library is</p>
@@ -36,16 +36,13 @@
 				</select>
 			</section>
 			<section>				
-			      <label class="control control_checkbox">I really want to work at PWC
-				      <input type="checkbox" id="check" checked="checked"/>
+			      <label class="control control_checkbox">I really want to work at PWC<input type="checkbox" id="check" checked="checked"/>
 				      <div class="control_indicator"></div>				      
 				  </label>	
 				  <br>
 				  <div class="submit">Submit</div>			  
 			</section>
-			<section>
-
-			</section>
+			
 		</form>	
 	</div>
 </body>
